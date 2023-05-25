@@ -1,0 +1,1 @@
+console.log("Seu aplicativo foi iniciado!")
