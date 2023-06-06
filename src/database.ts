@@ -20,17 +20,17 @@ export const users: Array<TUsers> = [
 export const products: Array<TProducts> = [
     {
         id: "p1",
-        name: "Placa de Pix",
+        name: "Placa de Pix Acrilico",
         price: 70,
         description: "Placa de pix em acrílico com 1 Qr Code",
         imageUrl: "link da imagem da placa de pix"
     },
     {
         id: "p2",
-        name: "Placa de Pix 2",
+        name: "Placa de Pix MDF",
         price: 120,
-        description: "Placa de pix em acrílico com 2 Qr Code",
-        imageUrl: "link da imagem da placa de pix 2 Qr code"
+        description: "Placa de pix em MDF com 1 Qr Code",
+        imageUrl: "link da imagem da placa de pix 1 Qr code"
     }
 ]
 
