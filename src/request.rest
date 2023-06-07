@@ -1,0 +1,8 @@
+### Teste API Ping pong
+GET http://localhost:3003/ping
+
+### Teste API Get all Users
+GET http://localhost:3003/users
+
+### Teste API Get all Products
+GET http://localhost:3003/products
