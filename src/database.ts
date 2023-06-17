@@ -48,6 +48,7 @@ export const createProduct = (id: string, name: string, price: number, descripti
 }
 
 export const getAllUsers = () => {
+    
     return users
 }
 

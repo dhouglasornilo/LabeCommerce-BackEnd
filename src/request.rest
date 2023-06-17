@@ -6,3 +6,22 @@ GET http://localhost:3003/users
 
 ### Teste API Get all Products
 GET http://localhost:3003/products
+
+### delete user por id
+DELETE http://localhost:3003/users/a2
+
+### delete products por id
+DELETE http://localhost:3003/products/p2
+
+### update por id
+PUT http://localhost:3003/products/p2
+content-type:application/json
+
+{   
+    "id": "a3",
+    "name": "Placa de Pix Acrilico",
+    "price": 200,
+    "description": "Placa de pix em Acrilico com 4 Qr Code",
+    "imageUrl": "link da imagem da placa de pix 4 Qr code"
+}
+
