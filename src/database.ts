@@ -28,7 +28,7 @@ export const products: Array<TProducts> = [
     {
         id: "p2",
         name: "Placa de Pix MDF",
-        price: 120,
+        price: 50,
         description: "Placa de pix em MDF com 1 Qr Code",
         imageUrl: "link da imagem da placa de pix 1 Qr code"
     }
