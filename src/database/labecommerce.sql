@@ -1,0 +1,29 @@
+-- Active: 1687300558717@@127.0.0.1@3306
+
+CREATE TABLE IF NOT EXISTS USERS(
+    ID TEXT PRIMARY KEY NOT NULL,
+    NAME TEXT NOT NULL,
+    EMAIL TEXT UNIQUE NOT NULL,
+    PASSWORD TEXT NOT NULL,
+    CREATED_AT TEXT NOT NULL
+);
+
+INSERT INTO USERS(ID, NAME, EMAIL, PASSWORD, CREATED_AT)
+VALUES ('a1', 'Dhouglas', 'dhouglas@example.com', '123456', '31/10/1995'),
+       ('a2', 'Jacy', 'jacy@example.com', '654321', '08/10/2000'),
+       ('a3', 'Alfredo', 'alfredo@example.com', 'miau', '14/07/2022');
+
+CREATE TABLE IF NOT EXISTS PRODUCTS(
+    ID TEXT PRIMARY KEY NOT NULL,
+    NAME TEXT NOT NULL,
+    PRICE REAL NOT NULL,
+    DESCRIPTION TEXT NOT NULL,
+    IMAGE_URL TEXT NOT NULL
+);
+
+INSERT INTO PRODUCTS (ID, NAME, PRICE, DESCRIPTION, IMAGE_URL)
+VALUES ('p1', 'Placa de Pix Acrilico 1 QRCODE', 70, 'Placa de pix em acrílico com 1 Qr Code', 'link da imagem da placa de pix 1 QRCODE'),
+       ('p2', 'Placa de Pix Acrilico 2 QRCODE', 120, 'Placa de pix em acrílico com 2 Qr Code', 'link da imagem da placa de pix 2 QRCODE'),
+       ('p3', 'Placa de Pix Acrilico 3 QRCODE', 170, 'Placa de pix em acrílico com 3 Qr Code', 'link da imagem da placa de pix 3 QRCODE'),
+       ('p4', 'Placa de Pix Acrilico 4 QRCODE', 220, 'Placa de pix em acrílico com 4 Qr Code', 'link da imagem da placa de pix 4 QRCODE'),
+       ('p5', 'Placa de Pix MDF 1 QRCODE', 50, 'Placa de pix em MDF com 1 Qr Code', 'link da imagem da placa de pix MDF 1 QRCODE');
