@@ -27,3 +27,40 @@ VALUES ('p1', 'Placa de Pix Acrilico 1 QRCODE', 70, 'Placa de pix em acrílico c
        ('p3', 'Placa de Pix Acrilico 3 QRCODE', 170, 'Placa de pix em acrílico com 3 Qr Code', 'link da imagem da placa de pix 3 QRCODE'),
        ('p4', 'Placa de Pix Acrilico 4 QRCODE', 220, 'Placa de pix em acrílico com 4 Qr Code', 'link da imagem da placa de pix 4 QRCODE'),
        ('p5', 'Placa de Pix MDF 1 QRCODE', 50, 'Placa de pix em MDF com 1 Qr Code', 'link da imagem da placa de pix MDF 1 QRCODE');
+
+
+-- EXERCÍCIO 1
+
+-- A
+SELECT * FROM USERS;
+
+-- B
+SELECT * FROM PRODUCTS;
+
+-- C
+SELECT * FROM PRODUCTS WHERE NAME LIKE '%ACRILICO%';
+
+-- C - TESTE 2
+SELECT * FROM PRODUCTS WHERE NAME LIKE '%MDF%';
+
+-- EXERCÍCIO 2
+
+-- A
+INSERT INTO USERS(ID, NAME, EMAIL, PASSWORD, CREATED_AT)
+VALUES ('a4', 'Zoe', 'zoe@example.com', 'zoe123', '14/06/2022');
+
+-- B
+INSERT INTO PRODUCTS(ID, NAME, PRICE, DESCRIPTION, IMAGE_URL)
+VALUES ('p6', 'Placa de Pix MDF 2 QRCODE', 90, 'Placa de pix em MDF com 2 Qr Code', 'link da imagem da placa de pix MDF 2 QRCODE');
+
+-- EXERCÍCIO 3
+
+-- A
+DELETE FROM USERS WHERE ID = 'a4';
+
+-- B
+DELETE FROM PRODUCTS WHERE ID = 'p6';
+
+-- C
+
+UPDATE PRODUCTS SET NAME = 'teste', PRICE = 150, DESCRIPTION = 'teste', IMAGE_URL = 'teste' WHERE ID = 'p6';
